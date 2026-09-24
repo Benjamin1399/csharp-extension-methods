@@ -4,9 +4,9 @@ namespace ExtensionMethodsApp
 {
     public static class PersonModelExtension
     {
-        public static PersonModel SetDefaultAge(this PersonModel person)
+        public static PersonModel SetDefaultAge(this PersonModel person, int age)
         {
-            person.Age = 18;
+            person.Age = age;
             return person;
         }
 

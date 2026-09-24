@@ -16,7 +16,7 @@ namespace ExtensionMethodsApp
             person.FirstName = "Benjamin";
             person.LastName = "Naidoo";
 
-            person.SetDefaultAge().PrintInfo();
+            person.SetDefaultAge(27).PrintInfo();
 
             Console.ReadLine();
         }
