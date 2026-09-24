@@ -11,6 +11,14 @@ namespace ExtensionMethodsApp
     {
         static void Main(string[] args)
         {
+            PersonModel person = new PersonModel();
+
+            person.FirstName = "Benjamin";
+            person.LastName = "Naidoo";
+
+            person.SetDefaultAge().PrintInfo();
+
+            Console.ReadLine();
         }
     }
 }

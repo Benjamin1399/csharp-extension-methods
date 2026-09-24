@@ -1,4 +1,6 @@
-﻿namespace ExtensionMethodsApp
+﻿using System;
+
+namespace ExtensionMethodsApp
 {
     public static class PersonModelExtension
     {
@@ -8,9 +10,9 @@
             return person;
         }
 
-        public static string PrintInfo(this PersonModel person)
+        public static void PrintInfo(this PersonModel person)
         {
-            return $"{person.FirstName} {person.LastName} is {person.Age}";
+            Console.WriteLine($"{person.FirstName} {person.LastName} is {person.Age}");
         }
     }
 }
